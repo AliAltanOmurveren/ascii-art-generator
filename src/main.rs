@@ -67,7 +67,7 @@ fn main() -> Result<(), Error>{
                 let grayscale = pixel[0] as f32 * 0.21 + pixel[1] as f32 * 0.72 + pixel[2] as f32 * 0.07;
                 let grayscale = grayscale as u8;
 
-                //
+                // check alpha
                 if pixel[3] > 0{
                     if invert{
                         // invert color
